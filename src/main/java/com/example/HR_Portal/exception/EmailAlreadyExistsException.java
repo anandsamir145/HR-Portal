@@ -1,0 +1,8 @@
+package com.example.HR_Portal.exception;
+
+public class EmailAlreadyExistsException extends RuntimeException {
+
+    public EmailAlreadyExistsException(String email) {
+        super("An account with email '" + email + "' already exists");
+    }
+}
